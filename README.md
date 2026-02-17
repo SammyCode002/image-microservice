@@ -78,17 +78,6 @@ http://localhost:5005/categories
 
 ---
 
-#### Health Check
-
-**Endpoint:**  
-GET /health  
-
-**Example Request:**
-
-http://localhost:5005/health
-
----
-
 ### How to Receive Data
 
 Response format: JSON
