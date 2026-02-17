@@ -17,7 +17,7 @@ It does NOT rely on external APIs at runtime.
 
 ## Developer
 
-Philip Gadsden
+Philip Gadsden, Hunter Havice
 
 ---
 
