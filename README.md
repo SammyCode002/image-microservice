@@ -8,7 +8,6 @@ It allows clients to:
 
 - Request a random image from a specific category
 - Retrieve a list of available categories
-- Verify service health
 
 The service downloads images once (via Pexels API), stores them locally, and serves them from a static directory.  
 It does NOT rely on external APIs at runtime.
@@ -115,15 +114,7 @@ http://localhost:5005/static/images/animals/animals_3.jpg
 
 ---
 
-#### Health Response
 
-```json
-{
-  "status": "ok"
-}
-```
-
----
 
 ### Error Responses
 
@@ -147,7 +138,7 @@ http://localhost:5005/static/images/animals/animals_3.jpg
 
 ## Endpoints
 
-GET /health  
+
 GET /categories  
 GET /image?category=<category>  
 
@@ -163,29 +154,8 @@ pip install -r requirements.txt
 
 ---
 
-### 2. Download Images (Optional Setup Step)
 
-Set your Pexels API key:
-
-```
-export PEXELS_API_KEY=your_key_here
-```
-
-Run:
-
-```
-python download_images.py
-```
-
-This downloads images into:
-
-```
-static/images/<category>/
-```
-
----
-
-### 3. Initialize Database
+### 2. Initialize Database
 
 Run:
 
@@ -197,7 +167,7 @@ This creates `images.db` and indexes all images by category.
 
 ---
 
-### 4. Start the Service
+### 3. Start the Service
 
 ```
 python app.py
@@ -225,11 +195,6 @@ List categories:
 http://localhost:5005/categories
 ```
 
-Health check:
-
-```
-http://localhost:5005/health
-```
 
 ---
 
