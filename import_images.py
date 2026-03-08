@@ -31,4 +31,4 @@ for category in os.listdir(BASE_DIR):
 conn.commit()
 conn.close()
 
-print("Database created succssfully.")
+print("Database created successfully.")
